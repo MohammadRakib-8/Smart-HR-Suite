@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+
+/* Custom classes */
+.loginFormDiv {
+  @apply min-h-screen flex items-center justify-center bg-gray-100;
+}
+
+.loginFormDiv form {
+  @apply bg-white shadow-lg rounded-lg p-8 w-full max-w-md;
+}
+
+.loginFormDiv h2 {
+  @apply text-2xl font-bold text-center mb-6 text-gray-800;
+}
+
+.loginFormDiv label {
+  @apply block text-gray-700 font-medium mb-2;
+}
+
+.loginFormDiv input,
+.loginFormDiv select {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition mb-4;
+}
+
+.submitBtn {
+  @apply w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-700 hover:shadow-lg transition duration-200;
+}

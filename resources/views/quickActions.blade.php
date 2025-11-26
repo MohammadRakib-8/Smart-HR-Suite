@@ -7,16 +7,17 @@
     <title>Quick Actions</title>
 </head>
 <body>
-    <h1>Employee Info</h1>
+    <h1>Employee Actions</h1>
     <a href="" id="addNewUsersButton">Add Users</a>
 <table class="table">
-<tr>Employee ID</tr>
-<tr>Employee Name</tr>
-<tr>Employee Email</tr>
-<tr>Employee Mobile</tr>
-<tr>Role</tr>
-<tr>Attendence</tr>
-<tr>Action</tr>
+<tr>
+<th>Employee ID</th>
+<th>Employee Name</th>
+<th>Employee Email</th>
+<th>Employee Mobile</th>
+<th>Role</th>
+<th>Attendence</th>
+<th>Action</th>
 </table>
 <tr>
 <td>1</td>

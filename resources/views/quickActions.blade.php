@@ -7,6 +7,25 @@
     <title>Quick Actions</title>
 </head>
 <body>
-    <table
+    <h1>Employee Info</h1>
+    <a href="" id="addNewUsersButton">Add Users</a>
+<table class="table">
+<tr>Employee ID</tr>
+<tr>Employee Name</tr>
+<tr>Employee Email</tr>
+<tr>Employee Mobile</tr>
+<tr>Role</tr>
+<tr>Attendence</tr>
+<tr>Action</tr>
+</table>
+<tr>
+<td>1</td>
+<td>Mohammad Rakib</td>
+<td>mohammadrakib@gmail.com</td>
+<td>01800000000</td>
+<td>Developer</td>
+<td>20</td>
+<td><button id="attendenceMarkedBtn">Marked Attendence</button></td>
+</tr>
 </body>
 </html>

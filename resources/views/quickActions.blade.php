@@ -26,7 +26,9 @@
 <td>01800000000</td>
 <td>Developer</td>
 <td>20</td>
-<td><button id="attendenceMarkedBtn">Marked Attendence</button></td>
+<td><button id="attendenceMarkedBtn">Marked Attendence</button>
+<button id="editBtn">Edit</button>
+</td>
 </tr>
 </body>
 </html>

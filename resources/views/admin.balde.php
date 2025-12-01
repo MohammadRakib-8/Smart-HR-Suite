@@ -13,7 +13,7 @@
     <div class="leftDiv">
     <a href="" id="stat">Statistics</a>
     <a href="" id="detailedInfo">Detailed Info</a>
-    <a href="" id="registrationHR">Register HR</a>
+    <a href="" id="registrationHR">Register</a>
 <button type="button" id="LogOutBtn" >Logout</button>
     </div>
     <div class="rightDiv">

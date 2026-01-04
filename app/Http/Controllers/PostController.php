@@ -36,4 +36,10 @@ $validated=$request->validate([
     return redirect()->back()->with('success','Successfully registred data into database');  
 
     }
+
+    public function dataRetriveIndex(){
+        $posts=Post::all();
+
+        return view('hr',compact('posts'));
+    }
 }

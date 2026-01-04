@@ -33,8 +33,12 @@
     <input type="email" id="emailAddU" name="email" placeholder="Enter employee email">
      <label>Phone:</label>
     <input type="phone" id="phoneAddU" name="phone" placeholder="Enter employee phone number">
-    <label>Role:</label>
-    <input type="text" id="roleADP"name="role" placeholder="Enter employee role">
+    <label name="roleFeild">Role:</label>
+<select name="role" id="Role">
+<option value="admin">Admin</option>
+<option value="hr">HR Manager</option>
+<option value="employee">Employee</option>
+</select>
     <label>Password:</label>
     <input type="password" id="passAddU" name="password" placeholder="Enter password">
     <label>Confirm Password:</label>

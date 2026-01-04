@@ -42,4 +42,13 @@ $validated=$request->validate([
 
         return view('hr',compact('posts'));
     }
+
+public function deleteData($id){
+$post=post::findOrFail($id);
+$post->delete();
+// flash()->success('Delete Successfull!');
+return redirect()->route('hrPage')->with('success', 'User deleted successfully!');
+
+}
+
 }

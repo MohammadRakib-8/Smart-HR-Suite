@@ -48,7 +48,16 @@
                 <td>{{ $post->updated_at }}</td>
                 <td>
                     <a href="">Edit</a>
-                    <a href="">Delete</a>
+                   <form action="{{ route('delete', $post->id) }}"
+          method="POST"
+          style="display:inline;">
+        @csrf
+        @method('DELETE')
+        <button type="submit"
+                onclick="return confirm('Are you sure?')">
+            Delete
+        </button>
+    </form>
                 </td>
             </tr>
         @endforeach

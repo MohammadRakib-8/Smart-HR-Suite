@@ -34,3 +34,4 @@ Route::post('/addUser',[PostController::class,'addUserFn'])->name('storeUserData
 })->name('addUserPage');
 
 Route::get('/',[PostController::class,'dataRetriveIndex'])->name('hrPage'); 
+Route::delete('/users/{id}',[PostController::class,'deleteData'])->name('delete');

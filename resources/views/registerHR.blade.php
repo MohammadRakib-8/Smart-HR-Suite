@@ -7,7 +7,7 @@
     <title>Register HR</title>
 </head>
 <body>
-    <form id="addUserForm" action="" method="">
+    <form id="addUserForm" action="{{route('')}}" method="POST">
     <label>Name:</label>
     <input type="text"id="nameADP" name="name" placeholder="Enter employee full name">
     <label>Email:</label>

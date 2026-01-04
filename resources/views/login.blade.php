@@ -16,7 +16,7 @@
 <label name="roleFeild">Role:</label>
 <select name="employeeRole" id="employeeRole">
 <option value="admin">Admin</option>
-<option value="HR">HR Manager</option>
+<option value="hr">HR Manager</option>
 <option value="employee">Employee</option>
 </select>
 <label name="passFeild">Password:</label>

@@ -7,17 +7,38 @@
     <title>Add Users</title>
 </head>
 <body>
-    <form id="addUserForm" action="" method="">
+    {{-- Success Message --}}
+    @if(session('success'))
+        <div style="color: green; font-weight: bold;">
+            {{ session('success') }}
+        </div>
+    @endif
+
+    {{-- Validation Errors --}}
+    @if ($errors->any())
+        <div style="color: red;">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+    <form id="addUserForm" action="{{route('storeUserData')}}" method="POST">
+    @csrf
     <label>Name:</label>
     <input type="text"id="nameAddU" name="name" placeholder="Enter employee full name">
     <label>Email:</label>
     <input type="email" id="emailAddU" name="email" placeholder="Enter employee email">
+     <label>Phone:</label>
+    <input type="phone" id="phoneAddU" name="phone" placeholder="Enter employee phone number">
     <label>Role:</label>
     <input type="text" id="roleADP"name="role" placeholder="Enter employee role">
     <label>Password:</label>
     <input type="password" id="passAddU" name="password" placeholder="Enter password">
     <label>Confirm Password:</label>
-    <input type="password" id="=confirmPassAddU" name="confirmPass" placeholder="Re-enter password">
+    <input type="password" id="confirmPassAddU" name="password_confirmation" placeholder="Re-enter password">
     <button type="submit" id="submitAddU">Add</button>
     </form>
 </body>

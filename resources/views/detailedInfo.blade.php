@@ -18,7 +18,7 @@
 <th>Attendence</th>
 <th>Created_At</th>
 <th>Updated_At</th>
-</tr>
+</tr> 
 </table>
 <tr>
 <td>--</td>

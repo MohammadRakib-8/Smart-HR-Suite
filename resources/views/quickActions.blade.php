@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Employee Actions</h1>
-    <a href="" id="addNewUsersButton">Add Users</a>
+    <a href="{{route('addUserPage')}}" id="addNewUsersButton">Add Users</a>
 <table class="table">
 <tr>
 <th>Employee ID</th>

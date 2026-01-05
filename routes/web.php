@@ -35,3 +35,6 @@ Route::post('/addUser',[PostController::class,'addUserFn'])->name('storeUserData
 
 Route::get('/',[PostController::class,'dataRetriveIndex'])->name('hrPage'); 
 Route::delete('/users/{id}',[PostController::class,'deleteData'])->name('delete');
+
+Route::post('/absent/{id}', [PostController::class, 'markAbsent'])
+     ->name('markAbsent');

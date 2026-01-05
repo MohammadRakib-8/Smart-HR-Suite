@@ -29,7 +29,9 @@
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>role</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Absent Count</th>
             <th>Created At</th>
             <th>Updated At</th>
             <th>Action</th>
@@ -44,6 +46,8 @@
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->phone }}</td>
                 <td>{{ $employee->role }}</td>
+                <td>{{ $employee->salary }}</td>
+                <td>{{ $employee->absent_count }}</td>
                 <td>{{ $employee->created_at }}</td>
                 <td>{{ $employee->updated_at }}</td>
                 <td>
@@ -58,6 +62,10 @@
             Delete
         </button>
     </form>
+    <form action="{{ route('markAbsent', $employee->id) }}" method="POST">
+    @csrf
+    <button type="submit">Mark Absent</button>
+</form>
                 </td>
             </tr>
         @endforeach

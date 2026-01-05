@@ -39,6 +39,14 @@
 <option value="hr">HR Manager</option>
 <option value="employee">Employee</option>
 </select>
+    
+    <label>Salary:</label>
+<input type="number" name="salary" value="0" placeholder="Enter employee Basic Salary">
+
+<label>Absent Count:</label>
+<input type="number" name="absent_count" value="0" placeholder="Enter employee absent days">
+
+
     <label>Password:</label>
     <input type="password" id="passAddU" name="password" placeholder="Enter password">
     <label>Confirm Password:</label>

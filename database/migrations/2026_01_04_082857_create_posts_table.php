@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('email')->unique();;
             $table->string('phone',11);
             $table->enum('role', ['admin', 'hr', 'employee']);
+            $table->decimal('salary',10,2)->default(0);;
+            $table->integer('absent_count')->default(0);;
             $table->string('password');
             $table->timestamps();
         });

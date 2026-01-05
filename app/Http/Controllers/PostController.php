@@ -20,6 +20,8 @@ $validated=$request->validate([
 'email' => 'required|email|unique:posts,email',
 'phone' => 'required|unique:posts,phone',
 'role' => 'required',
+'salary' => 'required|numeric',
+'absent_count' => 'required|integer',
 'password' => 'required|min:6|confirmed',]);
 
 
@@ -51,6 +53,14 @@ $post->delete();
 // flash()->success('Delete Successfull!');
 return redirect()->route('hrPage')->with('success', 'User deleted successfully!');
 
+}
+
+public function markAbsent($id)
+{
+    $employee = Post::findOrFail($id);
+    $employee->increment('absent_count');
+
+    return back()->with('success', 'Absent marked successfully');
 }
 
 }

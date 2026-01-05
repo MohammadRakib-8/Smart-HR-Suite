@@ -47,7 +47,7 @@ Route::put('/employee/{id}', [PostController::class, 'updateEmployee'])->name('e
 
 
 ////////////////////////
-// Route::get('/employee/{id}/payroll', [PostController::class, 'calculatePayroll'])->name('employee.payroll');
+Route::get('/employee/{id}/payroll', [PostController::class, 'calculatePayroll'])->name('employee.payroll');
 
 // Route::post('/login', [PostController::class, 'login'])->name('login');
 

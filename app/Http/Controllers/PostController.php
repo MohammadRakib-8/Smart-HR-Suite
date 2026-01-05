@@ -38,9 +38,11 @@ $validated=$request->validate([
     }
 
     public function dataRetriveIndex(){
-        $posts=Post::all();
+        // $posts=Post::all();
+        $employees = Post::where('role', 'employee')->get();
 
-        return view('hr',compact('posts'));
+
+        return view('hr',compact('employees'));
     }
 
 public function deleteData($id){

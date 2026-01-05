@@ -37,18 +37,18 @@
     </thead>
 
     <tbody>
-        @foreach($posts as $post)
+        @foreach($employees as $employee)
             <tr>
-                <td>{{ $post->id }}</td>
-                <td>{{ $post->name }}</td>
-                <td>{{ $post->email }}</td>
-                <td>{{ $post->phone }}</td>
-                <td>{{ $post->role }}</td>
-                <td>{{ $post->created_at }}</td>
-                <td>{{ $post->updated_at }}</td>
+                <td>{{ $employee->id }}</td>
+                <td>{{ $employee->name }}</td>
+                <td>{{ $employee->email }}</td>
+                <td>{{ $employee->phone }}</td>
+                <td>{{ $employee->role }}</td>
+                <td>{{ $employee->created_at }}</td>
+                <td>{{ $employee->updated_at }}</td>
                 <td>
                     <a href="">Edit</a>
-                   <form action="{{ route('delete', $post->id) }}"
+                   <form action="{{ route('delete', $employee->id) }}"
           method="POST"
           style="display:inline;">
         @csrf

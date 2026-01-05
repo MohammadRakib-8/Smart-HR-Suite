@@ -18,9 +18,9 @@ Route::get('/registerHR', function () {
 Route::get('/statistics', function () {
     return view('statistics');
 });
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/', function () {
+//     return view('login');
+// });
  
 
 Route::get('/quickActions',[PostController::class,'quickActionFn'])->name('quickAc');
@@ -38,3 +38,22 @@ Route::delete('/users/{id}',[PostController::class,'deleteData'])->name('delete'
 
 Route::post('/absent/{id}', [PostController::class, 'markAbsent'])
      ->name('markAbsent');
+
+
+
+Route::get('/employee/{id}/edit', [PostController::class, 'editEmployee'])->name('employee.edit');
+Route::put('/employee/{id}', [PostController::class, 'updateEmployee'])->name('employee.update');
+
+
+
+////////////////////////
+// Route::get('/employee/{id}/payroll', [PostController::class, 'calculatePayroll'])->name('employee.payroll');
+
+// Route::post('/login', [PostController::class, 'login'])->name('login');
+
+// Route::post('/logout', function (Request $request) {
+//     Auth::logout();
+//     $request->session()->invalidate();
+//     $request->session()->regenerateToken();
+//     return redirect('/');
+// })->name('logout');

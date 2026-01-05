@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-        @vite('resources/css/app.css')
 
 </head>
 <body>
     <div class="loginFormDiv">
-    <form method="" action="">
+    <form method="POST" action="{{ route('login') }}">
+        @csrf
 <h2>Login</h2>
 <label name="emailFeild">Email:</label>
 <input type="email" id="emailF" name="email" placeholder="Enter Your Email ">
 <label name="roleFeild">Role:</label>
-<select name="employeeRole" id="employeeRole">
+<select name="role" id="employeeRole">
 <option value="admin">Admin</option>
 <option value="hr">HR Manager</option>
 <option value="employee">Employee</option>

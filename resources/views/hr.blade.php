@@ -51,8 +51,7 @@
                 <td>{{ $employee->created_at }}</td>
                 <td>{{ $employee->updated_at }}</td>
                 <td>
-                    <a href="">Edit</a>
-                   <form action="{{ route('delete', $employee->id) }}"
+<a href="{{ route('employee.edit', $employee->id) }}">Edit</a>                   <form action="{{ route('delete', $employee->id) }}"
           method="POST"
           style="display:inline;">
         @csrf
@@ -66,6 +65,8 @@
     @csrf
     <button type="submit">Mark Absent</button>
 </form>
+    <a href="{{ route('employee.payroll', $employee->id) }}">View Payroll</a>
+
                 </td>
             </tr>
         @endforeach
